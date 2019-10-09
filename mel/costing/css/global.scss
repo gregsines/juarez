@@ -1,0 +1,81 @@
+
+/* includes */
+@import 'reset';
+@import 'grid'; 
+@import 'mixins';
+
+/* variables */
+
+$colour-main: #3d474e;
+$colour-copy: #131313;
+
+
+$colour-hover: #63b8d2;
+
+$font-default: "komikax","Helvetica","Arial",sans-serif;
+
+$bp-port: 767px;
+$bp-ls: 1023px;
+$bp-large: 1200px;
+
+/* fonts */
+
+@font-face {
+	font-family: 'komikax';
+    src: url('../fonts/komikax_-webfont.eot');
+    src: url('../fonts/komikax_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/komikax_-webfont.woff2') format('woff2'),
+         url('../fonts/komikax_-webfont.woff') format('woff'),
+         url('../fonts/komikax_-webfont.ttf') format('truetype'),
+         url('../fonts/komikax_-webfont.svg#komika_axisregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* global */
+
+body {
+	background-color: #fff;
+	font-family: $font-default;
+	color: $colour-copy;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mob-hide {
+	display: none;
+
+	@media screen and (min-width: $bp-port) {
+		display: block;
+	}
+}
+
+.box-1-go {
+	background: url(http://www.boogdesign.com/examples/svg/daisy-grass-repeating-background.jpg) center center no-repeat;
+}
+
+svg {
+	path {
+		fill: white;
+		fill-opacity: 0;
+		@include transition(fill-opacity, 1s, ease-out, 0ms)
+	}
+
+	.fade-in {
+		fill-opacity: 1;
+	}
+}
+
+.layout-4 {
+	.box-1 {
+	}
+}
+
+
+

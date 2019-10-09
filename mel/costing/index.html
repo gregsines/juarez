@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--> 
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]--> 
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]--> 
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--> 
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	
+	<title>Costings</title> 
+	
+	<meta name="description" content=""> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<link rel="stylesheet" href="css/global.css">
+
+	<style>
+		.wrapper {
+			padding-top: 30px;
+		}
+		.row {
+			display: block;
+			clear: both;
+			margin-bottom: 20px;
+			overflow: hidden;
+		}
+
+		label {
+			display: block;
+			font-weight:bold;
+			margin-bottom:2px;
+			font-size: 12px;
+		}
+
+		input {
+			width: 50px;
+			height: 50px;
+			padding: 5px;
+			font-size: 20px;
+			background-color: #aaaaaa;
+		}
+
+		#cost {
+			width: 100px;
+		}
+
+		.cost-result {
+			font-size: 40px;
+			color: blue;
+		}
+
+	</style>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	
+<body>
+
+	<div class="wrapper">
+		<div class="row">
+			<div class="col small-6 mid-6">
+				<label for="main-rate">Cost</label>
+				<input type="tel" id="cost" name="cost" value="0">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col small-2 mid-4">
+				<label for="main-rate">Cost from Rate #1</label>
+				<p class="cost-result" id="rate-1-cost" name="rate-1-cost">0</p>
+			</div>
+			<div class="col small-2 mid-4">
+				<label for="main-rate">Cost from Rate #2</label>
+				<p class="cost-result" id="rate-2-cost" name="rate-2-cost">0</p>
+			</div>
+			<div class="col small-2 mid-4">
+				<label for="main-rate">Company cost</label>
+				<p class="cost-result" id="company-cost" name="company-cost">0</p>
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col small-2 mid-4">
+				<label for="main-rate">Company rate (%)</label>
+				<input type="tel" id="company-rate" name="company-rate" value="89">
+			</div>
+			<div class="col small-2 mid-4">
+				<label for="main-rate">Rate #1 (%)</label>
+				<input type="tel" id="rate-1" name="rate-1" value="75">
+			</div>
+			<div class="col small-2 mid-4">
+				<label for="main-rate">Rate #2 (%)</label>
+				<input type="tel" id="rate-2" name="rate-2" value="80">
+			</div>
+		</div>
+
+		
+
+
+	</div>
+	
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
